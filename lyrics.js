@@ -28,19 +28,9 @@ var gifts = [
   'Twelve Drummers Drumming',
 ];
 
-var lastDayPrefix = 'A';
-
 for (var day=1; day <= 12; day++) {
   console.log();
   console.log('On the ' + days[day-1] + ' day of Christmas');
   console.log('my true love sent to me:');
-  for (var g=day-1; g >= 0; g--) {
-    if (g === 0) {
-      console.log(lastDayPrefix + ' ' + gifts[g]);
-    }
-    else {
-      console.log(gifts[g]);
-    }
-  }
-  lastDayPrefix = 'and a';
+  // TODO: finish the code to generate the complete lyrics.
 }
