@@ -30,6 +30,7 @@ var gifts = [
 
 var lastDayPrefix = 'A';
 
+// Print out the lyrics to the 12 days of Christmas
 for (var day=1; day <= 12; day++) {
   console.log();
   console.log('On the ' + days[day-1] + ' day of Christmas');
