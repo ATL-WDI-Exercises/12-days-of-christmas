@@ -29,19 +29,23 @@ var gifts = [
 ];
 
 var lastDayPrefix = 'A';
+var totalGifts = 0;
 
 // Print out the lyrics to the 12 days of Christmas
-for (var day=1; day <= 12; day++) {
+for (var day = 1; day <= 12; day++) {
   console.log();
-  console.log('On the ' + days[day-1] + ' day of Christmas');
+  console.log('On the ' + days[day - 1] + ' day of Christmas');
   console.log('my true love sent to me:');
-  for (var g=day-1; g >= 0; g--) {
+  for (var g = day - 1; g >= 0; g--) {
     if (g === 0) {
       console.log(lastDayPrefix + ' ' + gifts[g]);
     }
     else {
       console.log(gifts[g]);
     }
+    totalGifts += g + 1;
   }
   lastDayPrefix = 'and a';
 }
+
+console.log('\n\ntotal gifts:', totalGifts);
